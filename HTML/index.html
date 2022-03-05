@@ -136,19 +136,19 @@
 
         <div class="inputBlock">
             <label for="nameInput">Nombre: </label><br>
-            <input type="text" id="nameInput" placeholder="Introduce tu Nombre" name="userName" value ="">
+            <input required type="text" id="nameInput" placeholder="Introduce tu Nombre" name="userName" value ="">
         </div>
         <div class="inputBlock">
             <label for="lastNameInput">Apellidos:: </label><br>
-            <input type="text" id="lastNameInput" placeholder="Introduce tu Apellido" name="userApell" value ="">
+            <input required type="text" id="lastNameInput" placeholder="Introduce tu Apellido" name="userApell" value ="">
         </div>
         <div class="inputBlock">
             <label for="EmailInput">Email: </label><br>
-            <input type="email" id="EmailInput" placeholder="Introduce tu Mail" name="userEmail" value ="">
+            <input required type="email" id="EmailInput" placeholder="Introduce tu Mail" name="userEmail" value ="">
         </div>
         <div class="inputBlock">
             <label for="PasswordInput">Clave : </label><br>
-            <input type="password" id="PasswordInput" placeholder="Introduce una Contraseña" name="userPassword" value ="">
+            <input required type="password" id="PasswordInput" placeholder="Introduce una Contraseña" name="userPassword" value ="">
         </div>
         <div class="inputBlock">
             <label for="MessageInput">Area de Texto: </label><br>
@@ -163,6 +163,11 @@
                 <option value="Other">Otro</option>
             </select>
         </div>
+        <br><br>
+        <input id="ageInput" name="ageInput"type="number"  value="50"  min="0" max="120">
+        <br><br>
+        <input type="date">
+
         <br><br>
         <input type="submit" value="Guardar">
 
