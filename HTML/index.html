@@ -81,9 +81,95 @@
     <aside>
         <p>menu lateral</p>
     </aside>
-    <div class="container">
-        <p>contenedor genérico "DIV"</p>
+    <div class="container" style ="background-color:red;">
+        <p>contenedor genérico "DIV" para agrupar elementos</p>
+        <p>contenedor genérico 1 "DIV"</p>
+        <p>contenedor genérico 2"DIV"</p>
     </div>
+    <br><hr><br>
+    <!--  Listas-->
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>Elemento 5</li>
+    </ul>
+    <ol start ="500">
+        <li>Elemento</li>
+        <ul>
+            <li>Element</li>
+            <li>Element</li>
+
+        </ul>
+        <li>Elemento</li>
+        <li>Elemento</li>
+    </ol>
+
+    <!--  tablas-->
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Edad</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Enrique</td>
+                <td>Escudero</td>
+                <td>50</td>
+                
+            </tr>
+            <tr>
+                <td>luis</td>
+                <td>garcia</td>
+                <td>30</td>
+                
+            </tr>
+        </tbody>
+    </table>
+    <br><hr><br>
+    <!-- Formularios-->
+    <form action="" method="get">
+
+        <div class="inputBlock">
+            <label for="nameInput">Nombre: </label><br>
+            <input type="text" id="nameInput" placeholder="Introduce tu Nombre" name="userName" value ="">
+        </div>
+        <div class="inputBlock">
+            <label for="lastNameInput">Apellidos:: </label><br>
+            <input type="text" id="lastNameInput" placeholder="Introduce tu Apellido" name="userApell" value ="">
+        </div>
+        <div class="inputBlock">
+            <label for="EmailInput">Email: </label><br>
+            <input type="email" id="EmailInput" placeholder="Introduce tu Mail" name="userEmail" value ="">
+        </div>
+        <div class="inputBlock">
+            <label for="PasswordInput">Clave : </label><br>
+            <input type="password" id="PasswordInput" placeholder="Introduce una Contraseña" name="userPassword" value ="">
+        </div>
+        <div class="inputBlock">
+            <label for="MessageInput">Area de Texto: </label><br>
+            <textarea name="messageInput"id="MessageInput" cols="30" rows="10"></textarea>
+        </div>
+        <div class="inputBlock">
+            <label for="SexInput">Género: </label><br>
+            <select name="sexInput" id="SexInput">
+                <option hidden></option>
+                <option value="Female">Femenino</option>
+                <option value="Male">Masculino</option>
+                <option value="Other">Otro</option>
+            </select>
+        </div>
+
+
+
+
+    </form>
+        
+
 
     <footer>
         <p>Pie de pagina</p>
