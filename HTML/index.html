@@ -164,12 +164,30 @@
             </select>
         </div>
         <br><br>
-        <input id="ageInput" name="ageInput"type="number"  value="50"  min="0" max="120">
+        
+        <div class="inputblock">
+            <label for="ageInput">Edad</label>
+            <input id="ageInput" name="ageInput"type="number"  value="50"  min="0" max="120">
+            
+            <label for="birthdayInput">Fecha de nacimiento</label>
+            <input type="date" id="birthdayInput" name="birthdayInput">
+        </div>
         <br><br>
-        <input type="date">
+        <div class="inputblock">
+            <label for="carBrandInput">La marca de tu coche</label>
+            <input type="text" id="carBrandInput" name="carBrand" list="opcionLista">
+            <datalist id="opcionLista">
+                <option value="bmw">BMW</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+                <option value="ford">Ford</option>
+            </datalist>
+
+
+        </div>
 
         <br><br>
-        <input type="submit" value="Guardar">
+        <input type="submit" value="save" id="save">
 
 
 
@@ -183,7 +201,7 @@
         <address>Malaga 29730</address>
     
     </footer>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     
 </body>
 </html>
