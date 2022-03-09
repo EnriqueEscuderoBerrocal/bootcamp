@@ -185,19 +185,84 @@
 
 
         </div>
+        <br>
+
+
+
+        <fieldset disabled >
+            <legend> Información varia </legend>
+            <div class="inputBlock">
+                <label for="nameInput">Nombre: </label><br>
+                <input required type="text" id="nameInput2" placeholder="Introduce tu Nombre" name="userName" value ="">
+            </div>
+            <div class="inputBlock">
+                <label for="lastNameInput2">Apellidos: </label><br>
+                <input required type="text" id="lastNameInput2" placeholder="Introduce tu Apellido" name="userApell" value ="">
+            </div>
+
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Estado civil</legend>
+            <div>
+                <input type="radio" name="civilState" id="marriedInput">
+                <label for="marriedInput">Casado</label>
+                
+            </div>
+            <div>
+                <input type="radio" name="civilState" id="singleInput" checked>
+                <label for="singleInput">Soltero</label>
+                
+            </div>
+            <div>
+                <input type="radio" name="civilState" id="divorcedInput">
+                <label for="divorcedInput">Divorciado</label>
+                
+            </div>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Productos</legend>
+            <div>
+                <input type="checkbox" name="iphoneProduct" id="iphoneProduct">
+                <label for="iphoneProduct">Iphone</label>
+            </div>
+            <div>
+                <input type="checkbox" name="macbookProduct" id="macbookProduct">
+                <label for="macbookProduct">Macbook Pro</label>
+            </div>
+            <div>
+                <input type="checkbox" name="airpodsProduct" id="airpodsProduct">
+                <label for="airpodsProduct">Airpods</label>
+            </div>
+
+
+        </fieldset>
+        <br><br>
+        <label for="rangeInput">Seleccione cantidad de elementos</label>
+        <input type="range" name="range" id="rangeInput" min="0" max="100">
+        <br><br>
+        <label for="fuelLevel">Cantidad de gasolina</label>
+        <br>
+        <meter min="0" max="100" value="60" id="fuelLevel" ></meter>
+        <br>
+        <progress max="100" value="33"></progress>
+
 
         <br><br>
-        <input type="submit" value="save" id="save">
+        <input type="submit" value="Guardar" id="save">
 
 
 
 
     </form>
+    <br><br><br><br><br><br><br><br><br><br>
         
 
 
     <footer>
-        <p>Pie de pagina</p>
+        <p>Pie de pagina. esta página es una depruebas para formacion FullStack Web</p>
         <address>Malaga 29730</address>
     
     </footer>
