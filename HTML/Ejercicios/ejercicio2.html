@@ -7,6 +7,107 @@
     <title>Ejercicio 2</title>
 </head>
 <body>
+
+    <form action="#" method="get">
+        <fieldset style="border:6px groove #ccc; background:#F8ECE0;" >
+            <legend style="font-weight:bold; color:#61380B;"> Información Personal </legend>
+            <div class="inputBlock"><br>
+                <label for="nameInput">Nombre: </label>
+                <input required type="text" id="nameInput2" placeholder="Introduce tu Nombre" name="userName" value ="">            
+            
+                <label for="lastNameInput2">Apellidos: </label>
+                <input required type="text" id="lastNameInput2" placeholder="Introduce tus Apellidos" name="userApell" value ="">
+            </div>
+            <div class="inputblock"><br>
+                    <label for="ageInput">Edad</label>
+                    <input id="ageInput" name="ageInput"type="number"  value="40"  min="0" max="120">
+            </div>        
+            
+            <div class="inputBlock"><br>
+                <label for="EmailInput">Email: </label>
+                <input required type="email" id="EmailInput" placeholder="Introduce tu Mail" name="userEmail" value ="">
+            </div>
+            <div class="inputBlock"><br>
+                <label for="PasswordInput">Clave : </label>
+                <input required type="password" id="PasswordInput" placeholder="Introduce Clave" name="userPassword" value ="">
+            </div>
+            <br>
+            <fieldset>
+                <legend>Género </legend>
+                <div>
+                    <input type="radio" name="genero" id="womanInput">
+                    <label for="womanInput">Mujer</label>
+                    
+                </div>
+                <div>
+                    <input type="radio" name="genero" id="manInput" checked>
+                    <label for="manInput">Hombre</label>
+                    
+                </div>
+                <div>
+                    <input type="radio" name="genero" id="indefineInput">
+                    <label for="indefineInput">Otros</label>
+                    
+                </div>
+
+            </fieldset>
+            <br>
+
+            <div class="inputBlock"><br>
+                <label for="nameInput">Pais </label>
+                <input required type="text" id="paisInput" placeholder="Introduce tu Pais" name="pais">
+            </div> 
+            <br>
+            <div class="inputBlock">
+                <label for="programingInput">Lenguaje de Programación: </label>
+                <select name="programingInput" id="SexInput">
+                    <option hidden></option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="Php">Php</option>
+                    <option value="Python">Python</option>
+                </select>
+            </div>
+            <br>
+            <fieldset disabled>
+                <legend>Academia de estudios favorita</legend>
+                <br>
+                <div>
+                    <input type="radio" name="academia" id="csaInput" checked>
+                    <label for="csaInput">Code Space Academy</label>
+                    
+                </div>
+                <div>
+                    <input type="radio" name="academia" id="udemyInput" >
+                    <label for="udemyInput">Udemi</label>
+                    
+                </div>
+                <div>
+                    <input type="radio" name="academia" id="pmcInput">
+                    <label for="pmcInput">Por mi cuenta</label>
+                    
+                </div>
+
+            </fieldset>
+        </fieldset>
+        <br>
+        <div>
+            <input required type="checkbox" name="acrecibi" id="acerecibi">
+            <label for="acerecibi">Acepto recibir cientos de miles de correos irrelevantes.</label>
+        </div>
+        <div>
+            <input required type="checkbox" name="terminos" id="terminos">
+            <label for="terminos">Acepto los términos y condiciones</label>
+
+        </div>
+        <br>
+        <input type="submit" value="Guardar" >
+        <input type="reset" value="Vaciar Formulario">
+
+
+
+
+
+    </form>
     
 </body>
 </html>
