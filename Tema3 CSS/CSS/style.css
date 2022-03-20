@@ -1,17 +1,27 @@
-/*
+
 .div-verde{background-color:rgb(14, 235, 25);
-    height: 100px;
-    width: 100px;
+    height: 650px;
+    width: 20%;
+    font-family:Arial, Helvetica, sans-serif;
+    color:aliceblue;
+    float:left;
+    
 }
 
 #div1{
 
     background-color:rgb(199, 9, 9);
-   height: 100px;
-    width: 100px;
+    height: 650px;
+    width: 20%;
+    float:right;
 
 }
-*/
+#div1 a {
+    font-family:Arial, Helvetica, sans-serif;
+    color:aliceblue;
+    text-align:center;
+}
+
 footer {
     background-color: black;
 }
@@ -20,11 +30,13 @@ footer #textopie{
     font-size: 20px;
     color:aliceblue;
     text-align:center;
+    padding:10px
 
 }
 
 div.empty {
-    height: 2000px;
+    height: 100px;
+    width: 60%;
     background-color: red;
 }
 
@@ -40,4 +52,18 @@ div.empty {
     font-size: 20px;
     color:darkslategray   ;
     text-align:center;
+}
+
+.logo img {
+    height: 200px;
+    width: 100%;
+    
+}
+.menu a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+
 }
