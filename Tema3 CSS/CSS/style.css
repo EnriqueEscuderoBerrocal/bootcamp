@@ -51,6 +51,7 @@ div.empty {
     border: black;
     border-style: solid;
     border-width: 2px;
+    display:none; /* hace invisible donde este */
 }
 
 #Dfondo {
@@ -85,10 +86,11 @@ div.empty {
     color:aliceblue;
     padding-top: 10px;
     padding-left: 10px;
+    
 
 }
 .menu{
-    height: 10vh;
+    height: 10vh ;
     
 }
 
