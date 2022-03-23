@@ -115,3 +115,38 @@ div.empty {
         color:darkslategray;
         
     }
+
+    /* *************** TIPOS DE DISPLAYS  ***************   */ 
+
+[class^="box"] {
+    background-color:rgba(9, 106, 172, 0.918);
+
+
+}
+
+.box-0{
+    display:none; /* desaparece */
+}
+.box-3,
+.box-4,
+.box-3 p,
+.box-4 p{
+    display: inline-block; /* respeta el tamaño del contenedor     */ 
+
+
+}
+
+.box-5,.box-6,.box-5 p,.box-6 p{
+    display:inline; /*  LOs pone en linea   */
+
+}
+
+/* *** centrar horizontalment  */
+
+.x-centered{
+    background-color:chartreuse;
+    height: 50px;
+    width: 60%;
+    margin: auto;
+
+}
