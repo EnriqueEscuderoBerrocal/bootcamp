@@ -1,0 +1,60 @@
+
+
+.respo-1{
+    width:33%;
+    height: 30px;
+    border: 1px solid red;
+    
+}
+.respo-2{
+    
+    width:33%;
+    height: 30px;
+    border: 1px solid blue;
+}
+.respo-3{
+    
+    width:33%;
+    height: 30px;
+    border: 1px solid violet;
+}
+
+/* Media queries */
+
+
+/*a esta resolucion aplica las reglas de abajo */
+@media only screen and ( max-width: 600px){ 
+    .respo-1{
+        width: 70%;
+        background-color: blueviolet;
+    }
+
+}
+
+
+/*a esta resolucion aplica las reglas de abajo */
+@media only screen and ( max-width: 500px){  
+    h2{
+        text-align: center;
+    }    
+    .respo-1{
+        display: inline ;
+        width: 60%;
+        height: 100px;
+        background-color: rgb(133, 7, 7);
+        border: 1px solid rgb(133, 7, 7);
+        
+    }
+    .respo-2{
+        display: none;
+    }
+    .respo-3{
+    
+        width:50%;
+        height: 100px;
+        border: 1px solid violet;
+        background-color:violet;
+    }
+
+}
+
