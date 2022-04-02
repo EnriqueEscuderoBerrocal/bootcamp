@@ -44,8 +44,10 @@ body{
 .img-header{
     background-image: url(../images/puestasol.jpg);
     text-align: center;
+    background-size: cover;
     
     background-position: center right;
+    margin-bottom: 30px;
     
 
 }
@@ -53,5 +55,97 @@ body{
     font-size: 3em;
     line-height:1.6em;
     margin: 30px;
+    
+}
+.h1-movil{
+    display:none;
+
+}
+
+.main-section{
+
+    width: 70%;
+    float: left;
+    color : #333;
+    padding-right: 50px;
+    box-sizing: border-box;
+
+
+}
+.main-section h1{
+    margin-top: 0;
+
+}
+.sidebar {
+    width: 30%;
+    float:right;
+    background-color: #333;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.welcome{
+    overflow:hidden;
+
+}
+footer.container{
+    background-color: #333;
+    padding: 20px;
+}
+footer p{
+    text-align: center;
+}
+
+/*  MEDIA QUERIES */ 
+@media only screen and (max-width:768px){
+    .main-section, .sidebar{
+        width: 100%;
+        float: none;
+
+    } 
+    .main-section h1{
+        text-align: center;
+
+    }
+    .welcome{
+        margin-bottom: 30px;
+    }
+    .img-header{
+        background-image: url(../images/puestadesol-movil.jpg);
+    }
+
+
+    .img-header h1{
+        
+        font-size: 3em;
+        line-height:1.3em;
+        margin: 20px 5px; 
+        
+    }
+
+    
+    .hache1{
+        text-align: center;
+    }
+    .navbar li{
+        display: block;
+        margin-top: 15px;
+        text-align: center;
+    
+    }
+
+    /* cambio de texto */ 
+    .h1-original{
+        display:none;
+    
+    }
+    .h1-movil{
+        display:block ;
+    
+    }
+
+
+    
+
+    
     
 }
