@@ -1,5 +1,66 @@
+
+
+
 /* Flexbox */
+
 .flex-parent{
     display:flex;
+    flex-direction:row  ;
+    justify-content:center;  /*centra contenedor en estado row */
+  /*  align-items:center;  centra contenedor en estado column */
+      flex-wrap:wrap; /*si no cabe en el tamaño 
+                     de pantalla le busca nuevo sitio abajo */
+    /* flex-flow:row wrap; atajo para utilizar las dos propiedades anteriores */
+    height: 250px;
+    width:100%;
+   
+
+}
+
+footer {
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 20px;
+    color: white;
+    font-size: 10px;
+    padding: 10px;
+    text-align:center;
+        
+ 
+    
+    font-family: Arial, Helvetica, sans-serif;
+}
+    
+
+h2{
+    text-align:center;
+    font-family: Arial, Helvetica, sans-serif;
     
 }
+
+.child{
+    width: 250px;
+    text-align: center;
+     
+    
+
+}
+.flex-parent >div:nth-child(odd){
+    background-color: rgb(158, 141, 141);
+    color:rgb(239, 237, 243);
+    
+
+}
+.flex-parent >div:nth-child(even){
+    background-color: rgb(69, 71, 71);
+    color:rgb(245, 214, 238);
+    
+
+}
+
+
+
+    
+    
