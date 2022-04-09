@@ -1,0 +1,82 @@
+/* ICONOS */
+/* para los iconos de google tienes que poner el script JS en head y buscar el icono que quieras en su web
+donde tienes ue descargar el codigo y pegarlo en body */
+/* fa-2x es para modificar el tamaño subiendo el numero */
+
+.color{  /* con esta clase cambiamos el color al icono */
+    color: green;
+    
+}
+
+/* gradientes y sombras    */
+
+.base{
+    height: 100px;
+    
+    /*background-color: rgb(52, 132, 207); */
+    margin-bottom:5px;
+    border-radius: 12px;
+}
+.gradiant-1{
+    background: linear-gradient(to right, rgb(94, 94, 250), white);
+
+}
+.gradiant-2{
+    background: linear-gradient(to bottom,  white, rgb(152, 152, 224), white);
+
+}
+.gradiant-3{
+    background: linear-gradient(to bottom, rgb(235, 145, 145,0), rgba(245, 241, 241, 0.664) ), 
+    url(/images/fondo.jpg);
+    
+    height:300px;
+    background-size:cover;
+    
+
+}
+.gradiant-4{
+    background: radial-gradient(white 20%,rgb(240, 91, 91),red);
+    box-shadow: 25px 15px 30px rgb(49, 28, 28);
+
+}
+
+/* transformaciones */
+
+.transform{
+    height: 100px;
+    width: 100px;
+    background: linear-gradient(to left, rgb(94, 94, 250), rgb(245, 239, 239,0.1));
+    transform: translate(300px, -20px) rotate(20deg) scale(2) skew(25deg);
+
+
+}
+
+/* transiciones */
+.transition{
+    height: 100px;
+    width: 100px;
+    margin-left: 100px;
+    background-color: blueviolet;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    color: aliceblue;
+    cursor: pointer;
+    transition-property: transform, border-radius, blackground ;
+    transition-duration: 0.3s;
+    transition-delay: 0.3s;
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    
+
+}
+
+.transition:hover{
+    transform:scale(1.5) rotate(5deg);
+    border-radius: 12px;
+    background: linear-gradient(to left, blueviolet, rgb(245, 239, 239,0.1)); 
+
+
+}
+
+
+
