@@ -1,0 +1,63 @@
+.base{
+    background-color: rgb(102, 102, 240);
+    height: 100px;
+    border-radius: 10px;    
+    animation: cajeo 2s ease 0.5s 1 normal forwards;
+    transition: transform 0.3s ease-in-out;
+    opacity: 0;
+    
+    
+    
+
+}
+.base:hover{
+    transform:scale(1.1) ;
+}
+
+.padre{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    
+    gap:10px;
+
+
+}
+
+/* animacion */
+
+.hijo1 {animation-delay: 1s;}
+.hijo2 {animation-delay: 1.5s;}
+.hijo3 {animation-delay: 2s;}
+.hijo4 {animation-delay: 2.5s;}
+.hijo5 {animation-delay: 3s;}
+.hijo6 {animation-delay: 3.5s;}
+.hijo7 {animation-delay: 4s;}
+.hijo8 {animation-delay: 4.5s;}
+.hijo9 {animation-delay: 5s;}
+.hijo10 {animation-delay: 5.5s;}
+.hijo11 {animation-delay: 6s;}
+.hijo12 {animation-delay: 6.5s;}
+.hijo13 {animation-delay: 7s;}
+.hijo14 {animation-delay: 7.5s;}
+.hijo15 {animation-delay: 8s;}
+.hijo16 {animation-delay: 8.5s;}
+
+
+
+
+
+@keyframes cajeo {
+    from {
+        opacity: 0;
+        
+    }
+
+    
+    to {
+        opacity:1;
+        
+    }
+}
+
+
