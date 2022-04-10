@@ -62,10 +62,11 @@ donde tienes ue descargar el codigo y pegarlo en body */
     align-items: center;
     color: aliceblue;
     cursor: pointer;
-    transition-property: transform, border-radius, blackground ;
-    transition-duration: 0.3s;
-    transition-delay: 0.3s;
-    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    /*transition-property: transform, border-radius, blackground ;*/
+    /*transition-duration: 0.3s;*/
+    /* transition-delay: 0.3s; */
+    /*transition-timing-function:ease-in-out;*/
+    transition: transform 0.5s ease-in ;
     
 
 }
