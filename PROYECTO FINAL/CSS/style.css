@@ -1,0 +1,93 @@
+
+body{
+    font-family: inter,Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/inter/v8/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  .base{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  label{
+      display: block;
+    border-radius: 5px;
+    
+
+  }
+  form{
+      width:100%;
+  }
+  input, button{
+      margin-bottom: 5px;
+      background-color:white;
+      height: 35px;
+      width: 200px;
+      border-radius: 10px;
+  }
+  .enviar{
+    
+    font-family: inter,Arial, Helvetica, sans-serif;
+    background-color: #6c2bd9;
+    border: white 1px;
+    color: white;
+    cursor: pointer;
+    
+    width: 200px;
+    height: 35px;
+    border-radius: 5px;
+}
+
+
+
+.contenedor{
+    margin: auto;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    width: 800px;
+    height: 550px;
+    box-shadow:3px 3px  50px rgb(204, 204, 204);
+}
+
+
+
+.caja-1{    
+    
+    height: 550px;
+    width: 500px;
+    border-radius: 15px 0px 0px 15px;
+    background-image: url(/IMG/escritorio.jpg);
+    background-size:cover ;
+    
+  
+   
+}
+.caja-2{  
+    background-color:rgb(237, 239, 241); 
+    padding-left: 25%; 
+    height: 550px;
+    width: 300px;
+    border-radius: 0px 15px 15px 0px;
+    
+    
+    
+  
+   
+}
+
+
+    
+       
+
+
+
+
