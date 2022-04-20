@@ -1,11 +1,8 @@
-.sized{
-    height:  300px;
-    
+div {
+  background-color: red;
+}
+div a {
+  color: white;
 }
 
-.pie{
-    height:  25px;
-    text-align: center;
-    
-    
-}
+/*# sourceMappingURL=style.css.map */
