@@ -4,19 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css"> 
     <title>cheatsheet/JAVASCRIP</title>
 </head>
 <body>
     <h1>Procesar JavaScript</h1>
     <a href="" onclick="alert('Hola Tronco desde un Script InLine')" >Inline Script</a>
     <a href="">Internal Script</a>
-    <a href="">External ScriptS</a>
+    <a href="">External Script</a>
     <script>
         function saludo(){
+            console.log("pulsando desde un internal Script");
             alert("saludos desde un Script Interno");
+            
         }
         document.getElementsByTagName("a").item(1).addEventListener("click" ,saludo);
+        
     </script>
+    <script src="js/main.js"></script>
 
     
 </body>
