@@ -110,10 +110,50 @@ console.log(number2, typeof number2);
 
  number2 =Number ("fdfdgfd"); // NaN = no es un numero , no genera error
 console.log(number2, typeof number2);
+
 number2 = 1000;
 number2 += "1000"; // entiende que es una concatenación.
 console.log(number2, typeof number2);
 
+
+console.clear();
+// ---------------- Objetos -----------------------------
+
+let person = {
+    name:"John",
+    age: 30,
+    blonde: false,
+    phone:["952303307","691290594"],
+    telefonos:[
+        {
+            fijo: "952303307",
+            movil: "691290594"
+        }],
+    jump(){
+        console.log(" Mira que función dentro de un objeto me hice!!!");
+    }
+ };
+
+ person.jump(); // llamamos la funcion que esta dentro del objeto.
+
+ // Acceso por punto / Dot notation
+ console.log(person); 
+ console.log(`Se llama ${person.name} y tiene ${person.age} años, sus números de telefono son : ${person.phone} `);
+ 
+ // cambiar propiedad
+ person.name = "Juan";
+ console.log(`Ahora se llama ${person.name} y tiene ${person.age} años, su número de telefono Movil es : ${person.phone[1]} `);
+ 
+ //Acceso por corchetes / Brackets notation
+
+ let propertyName ="age";
+ console.log(person[propertyName]);
+  
+ // Ampliación
+ 
+ person.children =["Pepito", "Manolito"];
+ console.log(person); 
+ 
 
 
 
