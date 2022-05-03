@@ -25,7 +25,7 @@ function saludar() {
 }
 
 //saludar();
-console.clear();
+
 
 //   --------- Inicialización ------------
 let day;
@@ -55,7 +55,7 @@ console.log(suma);
 
  // ------------------- Tipos de datos -----------------
 // datos primitivos
- console.clear();
+ 
 
  let str = String("hola tronco");
  let str2 = "hola caracola"; //recomentado
@@ -116,7 +116,7 @@ number2 += "1000"; // entiende que es una concatenación.
 console.log(number2, typeof number2);
 
 
-console.clear();
+
 // ---------------- Objetos -----------------------------
 
 let person = {
@@ -153,7 +153,81 @@ let person = {
  
  person.children =["Pepito", "Manolito"];
  console.log(person); 
+
+
  
+ // -------------   This ---------------
+ const person2 ={
+     name:"Thomas",
+     talk(){
+         console.log(this); // hace referencia al mismo objeto en este caso person2 
+         console.log(`Me llamo ${this.name}`);
+     }
+ }
+ 
+person2.talk();
+
+console.log(this);
 
 
+
+// -------------------- Arrays ----------------------------
+
+let selectedColors =["Red","Blue","Yellow"]; //array de Strings
+
+console.log(selectedColors, selectedColors.length, typeof selectedColors);
+
+selectedColors[3] = "Green"; // añade elemento al array
+
+console.log(selectedColors, selectedColors.length);
+
+selectedColors.push("Violet", "Black", "White"); // añade elementos al final del array
+console.log(selectedColors, selectedColors.length);
+
+selectedColors.pop();  // Quita el último elemento
+console.log(selectedColors, selectedColors.length);
+
+selectedColors.unshift("Magent");  // añade elemento al principio del Array
+console.log(selectedColors, selectedColors.length);
+
+let removeIni = selectedColors.shift(); // elimina el primer elemento del Array
+console.log(`El color que he borrado es : ${removeIni}`);
+console.log(selectedColors, selectedColors.length);
+console.log("Este es el color que he metido en una variable : ",removeIni);
+
+selectedColors.sort(); // ordena alfabeticamente
+console.log(selectedColors, selectedColors.length);
+
+let indiceBusca = selectedColors.indexOf("Green"); // busca indices de array
+console.log(indiceBusca);
+
+console.log("Busca : ",selectedColors.slice(1,3)); // nos da el valor del indice 1 y 2 dejando el 3 fuera
+console.log("Borra : ",selectedColors.splice(1,1)); // elimina el indice 1
+console.log("Borra : ",selectedColors.splice(1,3)); // elimina los indices que se indican , del 1 al 3
+console.log("El array se ha quedado así : " ,selectedColors, selectedColors.length);
+
+console.clear();
+
+/*  ----- EJERCICIO -----
+Crear un objeto niño
+que tenga las proiedades , nombre ,altura, pelo y amigos
+Amigos estara inicialmente vacio y lo añadiremos posteriormente 3 elementos 
+con los nombres. Despues añadiremos uno al inicio.
+
+*/
+
+let children = {
+    nombre:"Jonas",
+    altura: 1.30,
+    pelo: "marron",
+    amigos:[]
+    
+ };
+
+ children.amigos.push("Pepe", "Alberto", "Julian");
+ children.amigos.unshift("Calletano");
+
+ console.log(children);
+
+ // ----- FIN DE EJERCICIO ------
 
