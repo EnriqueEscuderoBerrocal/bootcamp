@@ -5,7 +5,7 @@ function saludo(){
     alert("saludos desde un Script externo");
     
 }
-document.getElementsByTagName("a").item(2).addEventListener("click" ,saludo);
+//document.getElementsByTagName("a").item(2).addEventListener("click" ,saludo);
 
 // ------------------- depuracion /loggin -------------------------------
 
@@ -206,7 +206,7 @@ console.log("Borra : ",selectedColors.splice(1,1)); // elimina el indice 1
 console.log("Borra : ",selectedColors.splice(1,3)); // elimina los indices que se indican , del 1 al 3
 console.log("El array se ha quedado así : " ,selectedColors, selectedColors.length);
 
-console.clear();
+
 
 /*  ----- EJERCICIO -----
 Crear un objeto niño
@@ -220,14 +220,71 @@ let children = {
     nombre:"Jonas",
     altura: 1.30,
     pelo: "marron",
-    amigos:[]
-    
+    amigos:[],
+    colegas(){        
+        console.log("estos son mis amigos : ");
+        for (j=0; j < children.amigos.length;j++){// bucle para recorrer el array
+            console.log(children.amigos[j]);}; 
+    },
+    pierdeUltimoAmigo(){
+        let pierdeAmi = this.amigos.pop();
+        console.log(pierdeAmi ," Ya no es mi colega!!!");
+        if (this.amigos.length == 0){
+            console.log(" Me quedé sin Colegas!!!");
+        };
+    }    
  };
 
  children.amigos.push("Pepe", "Alberto", "Julian");
  children.amigos.unshift("Calletano");
 
  console.log(children);
+ children.colegas()
+ children.pierdeUltimoAmigo();
+ children.pierdeUltimoAmigo();
+ children.pierdeUltimoAmigo();
+ children.pierdeUltimoAmigo();
 
  // ----- FIN DE EJERCICIO ------
+
+ console.clear();
+
+ // ---- Condicionales --------------
+
+ const randomNumber = 3;
+ const guessedNumber = "5";
+ if (typeof randomNumber !== typeof guessedNumber){
+    console.log("Illooooo, o numeros o letras. No mezcles!!!");}
+
+ else if (randomNumber === guessedNumber) { //  estrictamente igual
+    console.log("Acertaste el número !!!");
+
+ } else if(randomNumber > guessedNumber){
+    console.log(" el número secreto es mayor !!!");
+
+ } else if (randomNumber < guessedNumber) {
+    console.log("el número secreto es menor !!!");
+
+ } else{
+    console.log("No diste una!!!");
+
+ }
+
+ //   -----------------       SWITCH         --------------------
+let fruta= "Manzanas";
+ switch (fruta){
+     case "Peras":   //cuando coincida el caso con la variable ejecuta el codigo del case
+        console.log(" quieres una :", fruta);
+            break;
+     case "Platano":
+        console.log(" quieres :", fruta);
+            break;
+     case "Manzanas":
+        console.log(" quieres :", fruta);
+            break;
+
+
+ }
+
+
 
