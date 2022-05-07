@@ -131,8 +131,15 @@ let person = {
         }],
     jump(){
         console.log(" Mira que función dentro de un objeto me hice!!!");
+    },
+    presentarse(){
+        //let resultaPelo = this.blonde ? " marron" : " rubio ";
+        console.log(`Me llamo ${this.name} , tengo ${this.age} años y el color de mi pelo es ${this.blonde ? " marron" : " rubio "} `);
+
     }
  };
+
+ person.presentarse();
 
  person.jump(); // llamamos la funcion que esta dentro del objeto.
 
@@ -247,7 +254,7 @@ let children = {
 
  // ----- FIN DE EJERCICIO ------
 
- console.clear();
+ 
 
  // ---- Condicionales --------------
 
@@ -271,20 +278,64 @@ let children = {
  }
 
  //   -----------------       SWITCH         --------------------
-let fruta= "Manzanas";
+let fruta= "Melon"; // variable con la opción.
  switch (fruta){
-     case "Peras":   //cuando coincida el caso con la variable ejecuta el codigo del case
-        console.log(" quieres una :", fruta);
-            break;
+     case "Pera":   //cuando coincida el caso con la variable ejecuta el codigo del case que corresponda
+            console.log(" quieres una :", fruta);
+            break; // si no ponemos break , ejecutaria todo el código.
      case "Platano":
-        console.log(" quieres :", fruta);
+        console.log(" quieres un :", fruta);
             break;
      case "Manzanas":
-        console.log(" quieres :", fruta);
+             console.log(" quieres unas :", fruta);
             break;
+    default: // si no se ajusta niguno de los CASE se ejecuta este.
+        console.log("Se ve que no quiero na"); 
+        // Aqui no es necesario poner break. 
 
 
  }
+
+ 
+ // ------------------ Ternary Operator ---------------
+
+  let variable = 12 < 10 ? "es menor" : " es mayor";
+
+  console.log(variable);
+
+  console.clear();
+  // ------- FUNCIONES --------------
+
+  // nombradas
+
+    
+  function prueba(uno,dos){
+       let resultado = uno + dos;
+       console.log(" El resultado es : ",resultado);
+      return resultado;
+  };
+
+  prueba();
+  prueba(1,2);
+
+// funcion que devuelve el cuadrado de un número que recive por parametro
+  function square(valor){
+      let = cuadrado = valor * valor;
+      return cuadrado;
+
+
+  };
+  let parametro = 20;
+  console.log("El cuadrado de ",parametro, " es ",square(parametro));
+  //console.log(prueba);
+
+
+  
+
+
+
+
+
 
 
 
