@@ -303,7 +303,7 @@ let fruta= "Melon"; // variable con la opción.
 
   console.log(variable);
 
-  console.clear();
+  
   // ------- FUNCIONES --------------
 
   // nombradas
@@ -329,13 +329,102 @@ let fruta= "Melon"; // variable con la opción.
   console.log("El cuadrado de ",parametro, " es ",square(parametro));
   //console.log(prueba);
 
+  console.clear();
+  // ---- ANóNIMAS -------
+  let numbersArray = [5,51,1,15];
+  console.log(numbersArray);
+  numbersArray.sort(); // ordena segun ASCII
+  console.log(numbersArray);
+
+function orderNumber(a,b){ // esta es la forma basica para ordenar con sort.
+    if (a < b){
+        return -1;
+         } else if (a ===b){
+             return 0;
+         } else {
+             return 1;
+         }
+};
+
+function orderNumber(a,b){ // esta es la forma basica para ordenar con sort.
+    if (a < b){
+        return -1;
+         } else if (a ===b){
+             return 0;
+         } else {
+             return 1;
+         }
+};
+function orderNumber2(a,b){ // esta funcion hace lo mismo que la primera 
+    return a-b;
+};
+
+  numbersArray.sort(orderNumber2); // añadimos la funcion creada orderNumber2
+  console.log(numbersArray, " Ordenado por a - b ");
+
+  numbersArray.sort(function (a,b){return a-b}); // aqui podemos ver la función anónima
+  console.log(numbersArray, " Función anónima a- b");
+  
+  
+  // ------   Arrow function - funciones de Flecha . Solo para JS6 -----------
+  const perimeterOfSquare = (side) => side*4; // despues dela flecha ira lo que nos devuelve como en el return
+  console.log(perimeterOfSquare(5), " arrow function");
+
+  console.log(typeof function () {});
+  console.log(typeof (()=>{}));
+
+  // esta seria la version anonima  de la arrow function creada arriba
+  const perimeterOfSquare2 =function (side){
+      return side *4;
+  };
+  console.clear();
+
+
+  //   ------ BUCLES -------
+
+  // --- For ----
+  for (let i=0; i <=10; i++){
+    console.log(`indice : ${i}`);
+  }
+
+   // añadiendo valores a un array 
+
+   let arrayFor =[]; // creamos el array
+  for (let i=0; i <=10; i++){ // creamos el bucle 
+      arrayFor.push(i);  // añadimos indice al final con Push    
+  }
+  console.log(`array : ${arrayFor}`);
+  console.log(typeof arrayFor);
+
+  // --- ejemplo de multiplicación, en este caso por 9  ----
+  let arrayMultipl =[]; // creamos el array
+  for (let i=1; i <=10; i++){ // creamos el bucle 
+      arrayMultipl.push(i*9);  // añadimos indice al final con Push    
+  }
+  console.log(`Tabla del 9  : ${arrayMultipl}`);
+
+  // ----- for each ,  se aplica a los array-----
+  let arrayFe=[2,4,66,78];
+  arrayFe.forEach(function (item){  // espera siempre una funcion
+      console.log("Valores del array ",item);
+
+  });
+
+
+
+
+  // ------Bucle  WHILE ------
+  let contador = 0;  // este while seria unoa forma de utilizarlo como un for, no tendria sentido!!
+  while (contador <= 10){
+      console.log(contador);
+      contador ++;
+  };
 
   
 
 
 
-
-
+  
 
 
 
