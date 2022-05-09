@@ -377,8 +377,7 @@ function orderNumber2(a,b){ // esta funcion hace lo mismo que la primera
   const perimeterOfSquare2 =function (side){
       return side *4;
   };
-  console.clear();
-
+  
 
   //   ------ BUCLES -------
 
@@ -402,7 +401,7 @@ function orderNumber2(a,b){ // esta funcion hace lo mismo que la primera
       arrayMultipl.push(i*9);  // añadimos indice al final con Push    
   }
   console.log(`Tabla del 9  : ${arrayMultipl}`);
-
+  
   // ----- for each ,  se aplica a los array-----
   let arrayFe=[2,4,66,78];
   arrayFe.forEach(function (item){  // espera siempre una funcion
@@ -410,8 +409,55 @@ function orderNumber2(a,b){ // esta funcion hace lo mismo que la primera
 
   });
 
+  // ----- for ...of ----------
+
+  let prueba2 ="Hola";
+  for (let item of prueba2){ // podemos utilizar string o Array
+      console.log("for of : ",item);
+  };
 
 
+ 
+ // ------ Continue --------
+
+ for (let i=0 ; i< 5; i++){
+     if (i === 3){ 
+         continue; // salta la siguiente interacion   
+        }
+
+     console.log("usando continue", i);
+ };
+
+
+ // ------ Break   -------
+
+  mainLoop : while (true){  // mainLoop es una etiqueta para relaciorar el bucle
+     while (true){
+         break mainLoop //rompe o para el bucle en el que este
+
+     }
+ };
+ console.clear();
+
+ let i =0;
+ let k ;
+
+ mainLoop2 : while (true){  
+     console.log("Outer loop ", i);
+     i++;
+     k=1;
+
+    while (true){
+        console.log("inner loop : ", k);
+        k++;
+        if (i === 3 && k === 3){
+            break mainLoop2;
+        }else if ( k === 3){
+            break;
+        }
+
+    }
+};
 
   // ------Bucle  WHILE ------
   let contador = 0;  // este while seria unoa forma de utilizarlo como un for, no tendria sentido!!
@@ -421,7 +467,7 @@ function orderNumber2(a,b){ // esta funcion hace lo mismo que la primera
   };
 
   
-
+  
 
 
   
