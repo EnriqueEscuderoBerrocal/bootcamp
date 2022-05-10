@@ -5,3 +5,25 @@ a{
     font-family: 'Courier New', Courier, monospace;
     
 }
+
+.grandparent{
+    height: 300px;
+    background-color: brown;
+}
+.grandparent, .grandparent div{
+    border: 5px solid black;
+    box-sizing: border-box;
+    display:flex;
+    gap:25px;
+    padding: 25px;
+    flex-grow: 1;
+
+
+}
+
+.parent{
+    background-color: darkblue;
+}
+.child {
+    background-color: yellowgreen;
+}

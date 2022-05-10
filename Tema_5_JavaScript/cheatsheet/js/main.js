@@ -466,6 +466,8 @@ function orderNumber2(a,b){ // esta funcion hace lo mismo que la primera
       contador ++;
   };
 
+  console.clear();
+
   
   
 
