@@ -10,7 +10,7 @@ console.log(document.lastModified);  // fecha demodificacion ultima del index.ht
 // ----------------------- selectores/ selectors  ----------------------
 const family= document.getElementsByTagName("div");
 console.log(family);
-console.log(Array.from(family)); // parsea  el HTMLCollection en array 
+console.log(Array.from(family)); // parsea  el HTMLCollection en  el array 
 Array.from(family).forEach(item => console.log(item));  // esto nos saca por consola todos los iten del nuevo array.
 
 for (let familyMember of family){ // esto es otra forma de listarlo.
