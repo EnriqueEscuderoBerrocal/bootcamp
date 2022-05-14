@@ -18,49 +18,74 @@ console.log(familyMember);
 }
 
 
-const grandParent = document.getElementById("grandparent");
+const grandParent = document.getElementById(".grandparent");
 console.log(grandParent);
 
 
 
-const parent1= document.getElementsByClassName("parent");
+const parent1= document.getElementsByClassName(".parent");
 console.log(parent1);
 console.log("----");
 for (let elementClass of parent1){ 
     console.log(elementClass);
-    }
+    };
 
    
 
-    const childr =document.getElementsByClassName("child");
-    console.log(childr);
+    const children1 =document.getElementsByClassName("child");
+    console.log(children);
     console.log("---");
-    for (let childClass of childr){  // listamos el array
+    for (let childClass of children1){  // listamos el array
         console.log(childClass);
-        }
+        };
 
         
 
-    const element = document.querySelector("div#grandparent>.parent>div.child#chil4");
+    let element = document.querySelector(".grandparent  .child"); // devuelve el primero de los valores
+    const yellow = document.querySelectorAll(".child");// devuelve todos los valores
     console.log(element);
     
     console.clear();
 
     const parents = document.getElementsByClassName("parent");
-   const parent2 = parents[0];
+    
    
-  ;
+  
 
    
 
    
     // ------- cambios en el DOM ------
+    //console.log("es un yelow: "+ yellow);
 
-    parent2.remove()
+    yellow[2].style.backgroundColor="#ddd";
+    element.style.backgroundColor="#d5d";
 
-    // no hay manera
 
-    console.log(parent2);
+    for (let item of yellow){
+        item.style.backgroundColor="white";
+    }
+    //console.log(" es children?? : " + children1);
+    children1[0].parentNode.style.backgroundColor = "yellow";
+
+    // para ahorrarnos picar codigo, creamos una funcion y le pasamos argumentos 
+    const  changeBackground = (elemento, color) => elemento.style.backgroundColor = color; // creamos funcion 
+    changeBackground(children1[3],"grey"); // llamamos a la funcion y le damos un argumento
+    changeBackground(yellow[0],"blue");
+
+    changeBackground(parent2.children[0], "orange");
+
+
+
+
+   
+    
+
+   
+
+    
+
+    
     
     
 
