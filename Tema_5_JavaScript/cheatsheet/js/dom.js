@@ -75,6 +75,24 @@ for (let elementClass of parent1){
 
     changeBackground(parent2.children[0], "orange");
 
+    changeBackground(grandparent.children[1].previousElementSibling ,"green");
+    
+    // ------ PROPIEDADES -------
+   //grandparent.innerHTML = ""; // esto borraria todo lo que cuelga de grandparent
+   // grandparent.innerHTML ="<h1>Tronco!!!\n</h1>"; // con esto añadimos codigo.
+
+    /*const nuevoValor = 0;
+    if (nuevoValor > 0 ){
+        grandparent.innerHTML ="<h1>nuevoValor es mayor a: 0!!!</h1>";
+
+    }else {
+        grandparent.innerHTML ="<h1>nuevoValor vale:  0</h1>";
+    }
+*/
+   
+
+    
+
 
 
 

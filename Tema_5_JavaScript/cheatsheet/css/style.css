@@ -7,7 +7,7 @@ a{
 }
 
 .grandparent{
-    height: 300px;
+    height: 400px;
     background-color: brown;
 }
 .grandparent, .grandparent div{
