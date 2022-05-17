@@ -23,7 +23,7 @@ console.log(grandParent);
 
 
 
-const parent1= document.getElementsByClassName(".parent");
+const parent1= document.getElementsByClassName("parent");
 console.log(parent1);
 console.log("----");
 for (let elementClass of parent1){ 
@@ -89,7 +89,63 @@ for (let elementClass of parent1){
         grandparent.innerHTML ="<h1>nuevoValor vale:  0</h1>";
     }
 */
+   console.log(children1[0].innerHTML);
+   console.log(children1[0].textContent);// ignora etiqueta html
+   console.log("Classlist: ", parent1[0].classList);
+   console.log(parent1);
+
+   document.querySelector("h1").id ="nuevoID";
+   parent1[0].setAttribute("name","nombre-del-parent-1");
+
+   //create / Remove Elements
+
+   let myDiv =document.createElement("div");
+   myDiv.id = "new-div";
+   myDiv.classList.add("child");
+   myDiv.textContent= "child 2.5";
+   parent1[0].appendChild(myDiv);// esto le dice donde colocar el nuevo div
+
+   myDiv2 = myDiv.cloneNode(true);// creamos un nuevo nodo a partir del original
+   myDiv2.textContent= "child 5";
+
+   parent1[1].appendChild(myDiv2);
+
+   myDiv.remove();
+
+   let myDiv3 =myDiv.cloneNode();
+   parent1[1].before(myDiv3); // lo pone al principio de parent[1]
+   myDiv3.textContent= "child nuevo";
+   parent1[1].after(myDiv.cloneNode()); // con esto , lo pone al final
+
+// crea una funcion que devuelva un nodo nuevo con etiqueta ID
+
+function crearNode(etiqueta, identificador) {
+    let myNodo =document.createElement("etiqueta");
+   myNodo.id = identificador;
    
+    
+    return myNodo;
+    
+    
+    
+}
+let newDiv = crearNode("div","identificador1");
+let table = crearNode("table","identificador2");
+
+parent1[0].appendChild(newDiv);
+parent1[1].appendChild(table);
+
+parent1[0].before(newDiv);
+
+
+
+
+   
+
+
+
+
+
 
     
 

@@ -21,6 +21,10 @@ a{
 
 }
 
+.bg-red{
+    background-color: red;
+}
+
 .parent{
     background-color: darkblue;
 }
