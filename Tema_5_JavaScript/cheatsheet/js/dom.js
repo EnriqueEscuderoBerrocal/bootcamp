@@ -120,14 +120,11 @@ for (let elementClass of parent1){
 // crea una funcion que devuelva un nodo nuevo con etiqueta ID
 
 function crearNode(etiqueta, identificador) {
-    let myNodo =document.createElement("etiqueta");
+    let myNodo =document.createElement(etiqueta);
    myNodo.id = identificador;
-   
-    
+       
     return myNodo;
-    
-    
-    
+            
 }
 let newDiv = crearNode("div","identificador1");
 let table = crearNode("table","identificador2");
@@ -136,6 +133,33 @@ parent1[0].appendChild(newDiv);
 parent1[1].appendChild(table);
 
 parent1[0].before(newDiv);
+
+// otro ejemplo de funcion con un href
+
+function crearNode(etiqueta1, identificador4) {
+    let myNode =document.createElement(etiqueta1);
+   myNode.id = identificador4;
+   
+    
+    return myNode;
+    
+    
+    
+}
+let newDiv1 = crearNode("div","identificador3");
+let link = crearNode("a","mainLink");
+
+link.textContent ="Texto de Enlace";
+link.setAttribute("href", "https://google.com");
+
+document.body.appendChild(link);// esto lo anexa a donde yo quiera
+
+
+
+// **************** EVENTOS ********************
+
+
+
 
 
 
