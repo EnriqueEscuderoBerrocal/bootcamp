@@ -123,3 +123,10 @@ function equal(a,b) {
 }
 console.log(" los datos son del mismo tipo ? ", equal(2,3));
 console.log(" los datos son del mismo tipo ? ", equal(2,"2"));
+
+console.clear()
+// reduce  --  suma el array y aparte le suma 10 al valor inicial de sum
+
+const arr =[10,25];
+
+console.log(arr.reduce((sum,currentNumber)=> sum + currentNumber, 10));
